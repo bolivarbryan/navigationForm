@@ -8,14 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var lastname: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var phone: UITextField!
+    @IBOutlet weak var ndot: UILabel!
+    @IBOutlet weak var ldot: UILabel!
+    @IBOutlet weak var cdot: UILabel!
+    @IBOutlet weak var pdot: UILabel!
+    @IBOutlet weak var invalid: UILabel!
 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +31,65 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    self.phone.delegate = self
+        self.phone.keyboardType = .NumberPad
     }
 
     
     
     @IBAction func sndbtn(sender: AnyObject) {
+    
+        if name.text == "" {
+        self.ndot.hidden = false
         
-        self.performSegueWithIdentifier("nxpg", sender: self)
+        }else {
+            self.ndot.hidden = true
+        }
+        
+        if lastname.text == "" {
+            self.ldot.hidden = false
+            
+        }else {
+            self.ldot.hidden = true
+        }
+        
+        if email.text == "" {
+            self.cdot.hidden = false
+            
+        }else {
+            self.cdot.hidden = true
+        }
+        
+        
+        if isnumeric(self.phone.text)  {
+            self.pdot.hidden = true
+            self.invalid.hidden = true
+        
+        }else if ( !isnumeric(self.phone.text) && self.phone.text != "" ){
+            self.pdot.hidden = false
+            self.invalid.hidden = false
+            
+        }else if ( self.phone.text == "") {
+        
+            self.pdot.hidden = false
+            self.invalid.hidden = true
+            
+        }else {
+            self.pdot.hidden = true
+            self.invalid.hidden = true
+        }
+        
+        
+        
+        
+        
+        
+        if ndot.hidden == true && ldot.hidden == true && cdot.hidden == true && pdot.hidden == true {
+            self.performSegueWithIdentifier("nxpg", sender: self)
+            
+        
+        
+        }
         
     }
     
@@ -47,6 +105,19 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func isnumeric (data:String) -> Bool {
+    
+        if let n = data.toInt() {
+            return true
+        
+        }else {
+        
+        return false
+        }
+    
+    }
+    
     
 }
 

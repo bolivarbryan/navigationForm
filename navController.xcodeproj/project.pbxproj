@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B92DA921AAF895E00841DD3 /* otro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B92DA911AAF895E00841DD3 /* otro.swift */; };
 		E8F5CA541AAF58F4001CB51D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5CA531AAF58F4001CB51D /* AppDelegate.swift */; };
 		E8F5CA561AAF58F4001CB51D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5CA551AAF58F4001CB51D /* ViewController.swift */; };
 		E8F5CA591AAF58F4001CB51D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F5CA571AAF58F4001CB51D /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B92DA911AAF895E00841DD3 /* otro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = otro.swift; sourceTree = "<group>"; };
 		E8F5CA4E1AAF58F4001CB51D /* navController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F5CA521AAF58F4001CB51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8F5CA531AAF58F4001CB51D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				E8F5CA5C1AAF58F4001CB51D /* LaunchScreen.xib */,
 				E8F5CA511AAF58F4001CB51D /* Supporting Files */,
 				E8F5CA731AAF59FC001CB51D /* SecondViewController.swift */,
+				8B92DA911AAF895E00841DD3 /* otro.swift */,
 			);
 			path = navController;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F5CA741AAF59FC001CB51D /* SecondViewController.swift in Sources */,
+				8B92DA921AAF895E00841DD3 /* otro.swift in Sources */,
 				E8F5CA561AAF58F4001CB51D /* ViewController.swift in Sources */,
 				E8F5CA541AAF58F4001CB51D /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +415,7 @@
 				E8F5CA6F1AAF58F4001CB51D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8F5CA701AAF58F4001CB51D /* Build configuration list for PBXNativeTarget "navControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				E8F5CA721AAF58F4001CB51D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

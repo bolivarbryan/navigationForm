@@ -1,16 +1,22 @@
 //
 //  ViewController.swift
-//  navController
+//  general
 //
-//  Created by Bryan A Bolivar M on 10/03/15.
-//  Copyright (c) 2015 Bryan A Bolivar M. All rights reserved.
+//  Created by Developer on 10/03/15.
+//  Copyright (c) 2015 Developer. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var txtName: UITextField!
 
+    
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var lastname: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var phone: UITextField!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,18 +27,26 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func showDetails(sender: AnyObject) {
-        self.performSegueWithIdentifier("showDetailsSegue", sender: self)
+    
+    
+    @IBAction func sndbtn(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("nxpg", sender: self)
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetailsSegue"
-        {
-            if let destinationVC = segue.destinationViewController as? SecondViewController{
-                destinationVC.nombre = txtName.text
+        if ( segue.identifier == "nxpg"){
+
+            if let desc = segue.destinationViewController as? otro {
+                desc.nm = name.text
+                desc.lsnm = lastname.text
+                desc.em = email.text
+                desc.ph = phone.text
+            
             }
         }
     }
-
+    
 }
 

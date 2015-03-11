@@ -84,7 +84,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         
         
-        if name.text != "" && lastname.text != "" && email.text != "" && phone.text != "" {
+        if ndot.hidden == true && ldot.hidden == true && cdot.hidden == true && pdot.hidden == true {
             self.performSegueWithIdentifier("nxpg", sender: self)
             
         

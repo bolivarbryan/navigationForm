@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A354B291AB0D10000EB60C8 /* tstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A354B281AB0D10000EB60C8 /* tstTableViewController.swift */; };
+		0A354B2D1AB0DAE300EB60C8 /* cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A354B2C1AB0DAE300EB60C8 /* cells.swift */; };
+		0A354B311AB0ED9300EB60C8 /* CustomCel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A354B301AB0ED9300EB60C8 /* CustomCel.swift */; };
+		0AAA35611AB1EEE4003995F9 /* changos.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA35601AB1EEE4003995F9 /* changos.png */; };
+		0AE3A58C1AB23410003A9273 /* downimg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3A58B1AB23410003A9273 /* downimg.swift */; };
 		8B92DA921AAF895E00841DD3 /* otro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B92DA911AAF895E00841DD3 /* otro.swift */; };
 		E8F5CA541AAF58F4001CB51D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5CA531AAF58F4001CB51D /* AppDelegate.swift */; };
 		E8F5CA561AAF58F4001CB51D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5CA551AAF58F4001CB51D /* ViewController.swift */; };
@@ -28,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A354B281AB0D10000EB60C8 /* tstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tstTableViewController.swift; sourceTree = "<group>"; };
+		0A354B2C1AB0DAE300EB60C8 /* cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cells.swift; sourceTree = "<group>"; };
+		0A354B301AB0ED9300EB60C8 /* CustomCel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCel.swift; sourceTree = "<group>"; };
+		0AAA35601AB1EEE4003995F9 /* changos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changos.png; sourceTree = "<group>"; };
+		0AE3A58B1AB23410003A9273 /* downimg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = downimg.swift; sourceTree = "<group>"; };
 		8B92DA911AAF895E00841DD3 /* otro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = otro.swift; sourceTree = "<group>"; };
 		E8F5CA4E1AAF58F4001CB51D /* navController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F5CA521AAF58F4001CB51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +91,7 @@
 		E8F5CA501AAF58F4001CB51D /* navController */ = {
 			isa = PBXGroup;
 			children = (
+				0AAA35601AB1EEE4003995F9 /* changos.png */,
 				E8F5CA531AAF58F4001CB51D /* AppDelegate.swift */,
 				E8F5CA551AAF58F4001CB51D /* ViewController.swift */,
 				E8F5CA571AAF58F4001CB51D /* Main.storyboard */,
@@ -89,6 +100,10 @@
 				E8F5CA511AAF58F4001CB51D /* Supporting Files */,
 				E8F5CA731AAF59FC001CB51D /* SecondViewController.swift */,
 				8B92DA911AAF895E00841DD3 /* otro.swift */,
+				0A354B281AB0D10000EB60C8 /* tstTableViewController.swift */,
+				0A354B2C1AB0DAE300EB60C8 /* cells.swift */,
+				0A354B301AB0ED9300EB60C8 /* CustomCel.swift */,
+				0AE3A58B1AB23410003A9273 /* downimg.swift */,
 			);
 			path = navController;
 			sourceTree = "<group>";
@@ -199,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F5CA591AAF58F4001CB51D /* Main.storyboard in Resources */,
+				0AAA35611AB1EEE4003995F9 /* changos.png in Resources */,
 				E8F5CA5E1AAF58F4001CB51D /* LaunchScreen.xib in Resources */,
 				E8F5CA5B1AAF58F4001CB51D /* Images.xcassets in Resources */,
 			);
@@ -218,10 +234,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A354B291AB0D10000EB60C8 /* tstTableViewController.swift in Sources */,
 				E8F5CA741AAF59FC001CB51D /* SecondViewController.swift in Sources */,
 				8B92DA921AAF895E00841DD3 /* otro.swift in Sources */,
 				E8F5CA561AAF58F4001CB51D /* ViewController.swift in Sources */,
 				E8F5CA541AAF58F4001CB51D /* AppDelegate.swift in Sources */,
+				0AE3A58C1AB23410003A9273 /* downimg.swift in Sources */,
+				0A354B2D1AB0DAE300EB60C8 /* cells.swift in Sources */,
+				0A354B311AB0ED9300EB60C8 /* CustomCel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

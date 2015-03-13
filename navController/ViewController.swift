@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITextFieldDelegate {
+class ViewController: UIViewController,UITextFieldDelegate{
 
     
     @IBOutlet weak var name: UITextField!
@@ -21,10 +21,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var pdot: UILabel!
     @IBOutlet weak var invalid: UILabel!
 
+    @IBOutlet weak var img: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.img.image = UIImage(named: "changos.png")
+        println(self.img.image)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -36,6 +40,16 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
 
     
+    @IBAction func table(sender: UIButton) {
+        self.performSegueWithIdentifier("tablevw", sender: self)
+        
+        
+    }
+
+    @IBAction func tvv(sender: AnyObject) {
+        self.performSegueWithIdentifier("tvv", sender: self)
+        
+    }
     
     @IBAction func sndbtn(sender: AnyObject) {
     
